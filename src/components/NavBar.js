@@ -9,8 +9,12 @@ const NavBar = () => {
       <img className="logo" src={Logo} alt="logo" />
       <h2>Surreal Estate</h2>
       <ul className="navbar-links">
-        <Link to="/" className="navbar-links-item">View Properties</Link>
-        <Link to="add-property" className="navbar-links-item">Add Property</Link>
+        <li className="navbar-links-item">
+        <Link to="/" className="navbar-link">View Properties</Link>
+        </li>
+        <li className="navbar-links-item">
+        <Link to="add-property" className="navbar-link">Add Property</Link>
+        </li>
       </ul>
     </div>
   );

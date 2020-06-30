@@ -19,6 +19,9 @@
     display: inline-block;
     margin: none;
     padding: 10px;
+}
+
+.navbar-link {
     text-decoration: none;
     color: black;
 }
