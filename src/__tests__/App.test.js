@@ -6,7 +6,7 @@ import App from "../components/App";
 
 test("full app rendering & navigating correctly", () => {
   const history = createMemoryHistory();
-  const { container, getByText } = render(
+  const { container, getByText, getByTestId } = render(
     <Router history={history}>
       <App />
     </Router>
@@ -17,5 +17,5 @@ test("full app rendering & navigating correctly", () => {
   expect(container.innerHTML).toMatch('Properties Page');
 
   fireEvent.click(getByText(/add property/i));
-  expect(container.innerHTML).toMatch('Add Property Page');  
+  expect(getByTestId('AddProperty')).toBeInTheDocument();  
 });

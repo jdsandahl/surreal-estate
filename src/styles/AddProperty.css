@@ -1,0 +1,27 @@
+.AddProperty {
+    padding: 20px;
+    max-width: 175px;
+}
+
+.add-property-form {
+    display: flex;
+    flex-direction: column;   
+}
+
+.add-property-button {
+    margin: 5px;
+    padding: 5px;
+}
+
+.form-label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.form-input {
+    flex: 0 1 auto;
+    align-items: center;
+    margin: 5px;
+}
