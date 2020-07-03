@@ -1,21 +1,19 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
-import AddProperty from "../components/AddProperty";
 
-describe("AddProperty", () => {
-  test('the page renders correctly against snapshot', () => {
-    const { asFragment } = render(<AddProperty />);
+import PropertyForm from "../components/PropertyForm";
+
+describe("PropertyForm", () => {
+  test("the page renders correctly against snapshot", () => {
+    const { asFragment } = render(<PropertyForm />);
     const component = asFragment();
 
     expect(component).toMatchSnapshot();
   });
 
   test("renders AddProperty component", () => {
-    const { getByTestId, getByRole, getByLabelText } = render(<AddProperty />);
+    const { getByRole, getByLabelText } = render(<PropertyForm />);
 
-    const pageElement = getByTestId("AddProperty");
-
-    expect(pageElement).toBeInTheDocument();
     expect(getByRole("button")).toHaveTextContent(/add/i);
     expect(getByLabelText(/title/i)).toBeInTheDocument();
     expect(getByLabelText(/city/i)).toBeInTheDocument();
