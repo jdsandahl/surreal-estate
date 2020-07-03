@@ -3,6 +3,13 @@ import { render, fireEvent, getByPlaceholderText, getByLabelText } from "@testin
 import AddProperty from "../components/AddProperty";
 
 describe("AddProperty", () => {
+  test('the page renders correctly against snapshot', () => {
+    const { asFragment } = render(<AddProperty />);
+    const component = asFragment();
+
+    expect(component).toMatchSnapshot();
+  });
+
   test("renders AddProperty component", () => {
     const { getByTestId, getByRole, getByLabelText } = render(<AddProperty />);
 
