@@ -1,27 +1,31 @@
 .AddProperty {
-    padding: 20px;
-    max-width: 175px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .add-property-form {
-    display: flex;
-    flex-direction: column;   
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 4px 8px 0 #c6c6c6;
+  padding: 25px 50px;
 }
 
 .add-property-button {
-    margin: 5px;
-    padding: 5px;
+  margin: 5px;
+  padding: 5px;
 }
 
 .form-label {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px;
 }
 
 .form-input {
-    flex: 0 1 auto;
-    align-items: center;
-    margin: 5px;
+  flex: 0 1 auto;
+  align-items: center;
+  margin: 5px;
 }
