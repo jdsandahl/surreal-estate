@@ -166,7 +166,7 @@ exports[`PropertyForm the page renders correctly against snapshot 1`] = `
         name="price"
         step="5000"
         type="number"
-        value=""
+        value="100000"
       />
     </label>
     <label
@@ -178,7 +178,7 @@ exports[`PropertyForm the page renders correctly against snapshot 1`] = `
         id="email"
         name="email"
         type="email"
-        value=""
+        value="test@test.com"
       />
     </label>
     <button
