@@ -59,4 +59,25 @@ describe("PropertyForm", () => {
     expect(getByLabelText(/price/i)).toBeInTheDocument();
     expect(getByLabelText(/email/i)).toBeInTheDocument();
   });
+
+  it("submits the form data and calls the handle submint function", () => {
+    const { getByTestId } = render(
+      <PropertyForm
+        handleAddProperty={mockHandleAddProperty}
+        handleFieldChange={mockHandleFieldChange}
+        title={mockData.title}
+        city={mockData.city}
+        type={mockData.type}
+        bedrooms={mockData.bedrooms}
+        bathrooms={mockData.bathrooms}
+        price={mockData.price}
+        email={mockData.email}
+      />
+    );
+
+    const form = getByTestId('property-form');
+    fireEvent.submit(form);
+    expect(mockHandleAddProperty).toHaveBeenCalled();
+
+  });
 });

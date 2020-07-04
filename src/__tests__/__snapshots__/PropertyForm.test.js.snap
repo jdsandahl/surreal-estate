@@ -4,6 +4,7 @@ exports[`PropertyForm the page renders correctly against snapshot 1`] = `
 <DocumentFragment>
   <form
     class="add-property-form"
+    data-testid="property-form"
   >
     <label
       class="form-label"

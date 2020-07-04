@@ -8,6 +8,7 @@ exports[`AddProperty the page renders correctly against snapshot 1`] = `
   >
     <form
       class="add-property-form"
+      data-testid="property-form"
     >
       <label
         class="form-label"

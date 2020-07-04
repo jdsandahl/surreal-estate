@@ -12,7 +12,11 @@ const PropertyForm = ({
   email,
 }) => {
   return (
-    <form onSubmit={handleAddProperty} className="add-property-form">
+    <form
+      onSubmit={handleAddProperty}
+      className="add-property-form"
+      data-testid="property-form"
+    >
       <label className="form-label">
         Title:
         <input
