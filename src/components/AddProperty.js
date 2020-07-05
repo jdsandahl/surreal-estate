@@ -16,13 +16,23 @@ const AddProperty = () => {
       price: 100000,
       email: "yourName@example.com",
     },
+    alert: {
+      message: "",
+      isSuccess: true
+    }
   };
 
   const [fields, setFields] = useState(initialState.fields);
+  const [alert, setAlert] = useState(initialState.alert);
 
-  const handleAddProperty = (event) => {
+  const clearAlert = () => {
+    setAlert(initialState.alert);
+  }
+
+  const handleAddProperty = async (event) => {
     event.preventDefault();
-    postProperty(fields);
+    setAlert(await postProperty(fields));
+    setTimeout(clearAlert, 3000);
   };
 
   const handleFieldChange = (event) => {
@@ -33,7 +43,7 @@ const AddProperty = () => {
 
   return (
     <div className="AddProperty" data-testid="AddProperty">
-      <Alert message="dummy test message" />
+      <Alert message={alert.message} success={alert.isSuccess} />
       <PropertyForm
         handleAddProperty={handleAddProperty}
         handleFieldChange={handleFieldChange}
