@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/AddProperty.css";
 
 import PropertyForm from "../components/PropertyForm";
+import postProperty from "../services/postProperty";
 
 const AddProperty = () => {
   const initialState = {
@@ -20,7 +21,7 @@ const AddProperty = () => {
 
   const handleAddProperty = (event) => {
     event.preventDefault();
-    console.log(fields);
+    postProperty(fields);
   };
 
   const handleFieldChange = (event) => {
