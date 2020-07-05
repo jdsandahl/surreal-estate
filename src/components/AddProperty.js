@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/AddProperty.css";
 
+import Alert from "../components/Alert";
 import PropertyForm from "../components/PropertyForm";
 import postProperty from "../services/postProperty";
 
@@ -32,6 +33,7 @@ const AddProperty = () => {
 
   return (
     <div className="AddProperty" data-testid="AddProperty">
+      <Alert message="dummy test message" />
       <PropertyForm
         handleAddProperty={handleAddProperty}
         handleFieldChange={handleFieldChange}
@@ -42,7 +44,7 @@ const AddProperty = () => {
         bathrooms={fields.bathrooms}
         price={fields.price}
         email={fields.email}
-      />
+      />        
     </div>
   );
 };

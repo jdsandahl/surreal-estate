@@ -1,0 +1,17 @@
+.Alert {
+    margin: 10px 0px;
+    padding: 5px;
+  }
+
+.alert-success {
+    border: 2px solid green;
+    color: green;
+    background-color: #d1f2de;
+}
+
+.alert-error {
+    border: 2px solid red;
+    color: red;
+    background-color: #fcd3c9;
+    
+}
