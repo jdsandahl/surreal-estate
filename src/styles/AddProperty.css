@@ -1,8 +1,9 @@
-.AddProperty {  
+.AddProperty {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  background-color: rgb(230, 230, 230);
+  height: 100vh;
 }
 
 .add-property-form {
@@ -11,11 +12,13 @@
   border: 1px solid #c6c6c6;
   box-shadow: 0 4px 8px 0 #c6c6c6;
   padding: 25px;
+  max-width: 275px;
+  background-color: #ffffff;
 }
 
 .add-property-button {
-    margin: 5px;
-    padding: 5px;
+  margin: 5px;
+  padding: 5px;
 }
 
 .form-label {
