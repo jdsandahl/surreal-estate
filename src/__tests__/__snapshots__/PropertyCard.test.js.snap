@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PropertyCard it renders correctly against snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="property-card"
+  >
+    <div
+      class="property-card__logo"
+    >
+      <img
+        alt="logo"
+        class="logo"
+        src="real-estate-logo.png"
+      />
+    </div>
+    <div
+      class="property-card__title"
+      data-testid="title"
+    >
+      Property for rent
+    </div>
+    <div
+      class="property-card__type"
+      data-testid="type"
+    >
+      Flat
+    </div>
+    <div
+      class="property-card__city"
+      data-testid="city"
+    >
+      Manchester
+    </div>
+    <div
+      class="property-card__bedrooms"
+      data-testid="bedrooms"
+    >
+      2
+    </div>
+    <div
+      class="property-card__bathrooms"
+      data-testid="bathrooms"
+    >
+      2
+    </div>
+    <div
+      class="property-card__price"
+      data-testid="price"
+    >
+      100000
+    </div>
+    <button
+      class="property-card__email"
+      href="mailto:test@test.com"
+    >
+      Email
+    </button>
+  </div>
+</DocumentFragment>
+`;

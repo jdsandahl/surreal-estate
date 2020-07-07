@@ -1,7 +1,13 @@
 import React from "react";
+import PropertyListings from "./PropertyListings";
 
 const Properties = () => {
-  return <div>Properties Page</div>;
+  return (
+    <div>
+      Properties Page
+      <PropertyListings />
+    </div>
+  );
 };
 
 export default Properties;
