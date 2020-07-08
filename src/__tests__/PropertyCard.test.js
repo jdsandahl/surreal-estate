@@ -36,10 +36,7 @@ describe("PropertyCard", () => {
     expect(getByText(/^property for rent$/i)).toBeInTheDocument();
 
     expect(getByTestId("type")).toHaveClass("property-card__type");
-    expect(getByText(/^flat$/i)).toBeInTheDocument();
-
-    expect(getByTestId("city")).toHaveClass("property-card__city");
-    expect(getByText(/^manchester$/i)).toBeInTheDocument();
+    expect(getByText(/^flat - manchester$/i)).toBeInTheDocument();
 
     expect(getByTestId("bedrooms")).toHaveClass("property-card__bedrooms");
     expect(getByText(/^2$/i)).toBeInTheDocument();

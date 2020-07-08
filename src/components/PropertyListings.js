@@ -8,7 +8,7 @@ const PropertyListings = () => (
       type="Flat"
       city="Manchester"
       bedrooms="2"
-      bathrooms="2"
+      bathrooms="1"
       price="100000"
       email="test@test.com"
     />

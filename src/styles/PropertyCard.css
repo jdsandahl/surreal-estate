@@ -10,3 +10,7 @@
     justify-content: center;
     background-color: rgb(230, 230, 230);
 }
+
+.property-card__type {
+   font-style: italic; 
+}
