@@ -34,19 +34,24 @@ describe("PropertyCard", () => {
 
     expect(getByTestId("title")).toHaveClass("property-card__title");
     expect(getByText(/^property for rent$/i)).toBeInTheDocument();
+    
 
     expect(getByTestId("type")).toHaveClass("property-card__type");
     expect(getByText(/^flat - manchester$/i)).toBeInTheDocument();
 
     expect(getByTestId("bedrooms")).toHaveClass("property-card__bedrooms");
     expect(getByText(/^2$/i)).toBeInTheDocument();
+    expect(getByRole('img', { icon: /bed/i })).toBeInTheDocument();
 
     expect(getByTestId("bathrooms")).toHaveClass("property-card__bathrooms");
     expect(getByText(/^1$/i)).toBeInTheDocument();
+    expect(getByRole('img', { icon: /bath/i })).toBeInTheDocument();
 
     expect(getByTestId("price")).toHaveClass("property-card__price");
     expect(getByText(/^100000$/i)).toBeInTheDocument();
+    expect(getByRole('img', { icon: /pound-sign/i })).toBeInTheDocument();
 
     expect(getByRole("button", { name: /email/i })).toBeInTheDocument();
+    expect(getByRole('img', { icon: /envelope/i })).toBeInTheDocument();
   });
 });

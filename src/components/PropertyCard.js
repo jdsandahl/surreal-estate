@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import "../styles/PropertyCard.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBed, faBath, faPoundSign } from "@fortawesome/free-solid-svg-icons";
+import { faBed, faBath, faPoundSign, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import Logo from "../images/real-estate-logo.png";
 
@@ -36,7 +36,7 @@ const PropertyCard = ({
       <FontAwesomeIcon icon={faPoundSign} /> {price}
     </div>
     <button className="property-card__email" href={`mailto:${email}`}>
-      Email
+      <FontAwesomeIcon icon={faEnvelope} /> Email
     </button>
   </div>
 );
