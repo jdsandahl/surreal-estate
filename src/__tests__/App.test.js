@@ -20,7 +20,7 @@ describe("App", () => {
 
   test("full app rendering & navigating correctly", () => {
     const history = createMemoryHistory();
-    const { container, getByText, getByTestId } = render(
+    const { getByText, getByTestId } = render(
       <Router history={history}>
         <App />
       </Router>
@@ -28,7 +28,6 @@ describe("App", () => {
     const titleElement = getByText(/surreal estate/i);
 
     expect(titleElement).toBeInTheDocument();
-    expect(container.innerHTML).toMatch("Properties Page");
 
     fireEvent.click(getByText(/add property/i));
     expect(getByTestId("AddProperty")).toBeInTheDocument();

@@ -2,7 +2,9 @@
 
 exports[`PropertyListings the component renders correctly against snapshot 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="property-listings"
+  >
     <div
       class="property-card"
     >
@@ -19,13 +21,13 @@ exports[`PropertyListings the component renders correctly against snapshot 1`] =
         class="property-card__title"
         data-testid="title"
       >
-        Property for rent
+        Second New Property
       </div>
       <div
         class="property-card__type"
         data-testid="type"
       >
-        Flat - Manchester
+        Flat - Leeds
       </div>
       <div
         class="property-card__bedrooms"
@@ -46,7 +48,7 @@ exports[`PropertyListings the component renders correctly against snapshot 1`] =
             fill="currentColor"
           />
         </svg>
-         2
+         1
       </div>
       <div
         class="property-card__bathrooms"
@@ -88,7 +90,7 @@ exports[`PropertyListings the component renders correctly against snapshot 1`] =
             fill="currentColor"
           />
         </svg>
-         100000
+         10000
       </div>
       <button
         class="property-card__email"
