@@ -1,8 +1,10 @@
 .property-card {
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     padding: 10px;
     font-family: 'Open Sans';
+    min-width: 250px;
 }
 
 .property-card__logo {

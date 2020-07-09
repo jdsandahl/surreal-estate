@@ -123,9 +123,9 @@ exports[`AddProperty the page renders correctly against snapshot 1`] = `
             3
           </option>
           <option
-            value="4+"
+            value="4"
           >
-            4+
+            4
           </option>
         </select>
       </label>
@@ -136,7 +136,7 @@ exports[`AddProperty the page renders correctly against snapshot 1`] = `
         <select
           class="form-input"
           id="bathrooms"
-          name="bedrooms"
+          name="bathrooms"
         >
           <option
             value="1"
@@ -154,9 +154,9 @@ exports[`AddProperty the page renders correctly against snapshot 1`] = `
             3
           </option>
           <option
-            value="4+"
+            value="4"
           >
-            4+
+            4
           </option>
         </select>
       </label>

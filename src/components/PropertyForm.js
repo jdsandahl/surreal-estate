@@ -72,14 +72,14 @@ const PropertyForm = ({
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
-          <option value="4+">4+</option>
+          <option value="4">4</option>
         </select>
       </label>
       <label className="form-label">
         Bathrooms:
         <select
           id="bathrooms"
-          name="bedrooms"
+          name="bathrooms"
           className="form-input"
           value={bathrooms}
           onChange={handleFieldChange}
@@ -87,7 +87,7 @@ const PropertyForm = ({
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
-          <option value="4+">4+</option>
+          <option value="4">4</option>
         </select>
       </label>
       <label className="form-label">
