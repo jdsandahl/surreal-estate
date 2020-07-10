@@ -1,18 +1,13 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, waitForElementToBeRemoved, act } from "@testing-library/react";
 import Properties from "../components/Properties";
 
 describe("Properties", () => {
   test("the page renders correctly against snapshot", () => {
-    const { asFragment } = render(<Properties />);
+    const { asFragment, getByText, getByRole } = render(<Properties />);
     const component = asFragment();
 
     expect(component).toMatchSnapshot();
   });
 
-  xtest("renders Properties component", () => {
-    const { getByText } = render(<Properties />);
-
-    
-  });
 });
