@@ -5,10 +5,22 @@ import "../styles/SideBar.css";
 const SideBar = () => {
   return (
     <div className="sidebar">
-      <Link to={`/?query={"city": "Manchester"}`}>Manchester</Link>
-      <Link to={`/?query={"city": "Leeds"}`}>Leeds</Link>
-      <Link to={`/?query={"city": "Sheffield"}`}>Sheffield</Link>
-      <Link to={`/?query={"city": "Liverpool"}`}>Liverpool</Link>
+      <label>Filter By City:  
+      <ul className="sidebar__links">
+        <li className="sidebar__item">
+          <Link to={`/?query={"city": "Manchester"}`} className="sidebar__link">Manchester</Link>
+        </li>
+        <li className="sidebar__item">
+          <Link to={`/?query={"city": "Leeds"}`} className="sidebar__link">Leeds</Link>
+        </li>
+        <li className="sidebar__item">
+          <Link to={`/?query={"city": "Sheffield"}`} className="sidebar__link">Sheffield</Link>
+        </li>
+        <li className="sidebar__item">
+          <Link to={`/?query={"city": "Liverpool"}`} className="sidebar__link">Liverpool</Link>
+        </li>
+      </ul>
+      </label>
     </div>
   );
 };

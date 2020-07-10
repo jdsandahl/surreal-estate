@@ -1,0 +1,17 @@
+.sidebar {
+  margin: 20px 0px 10px 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 #c6c6c6;
+}
+
+.sidebar__links {
+  list-style: none;
+}
+
+.sidebar__item {
+}
+
+.sidebar__link {
+  text-decoration: none;
+}

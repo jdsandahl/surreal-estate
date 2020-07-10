@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropertyListings from "./PropertyListings";
 import Alert from "./Alert";
+import SideBar from "./SideBar";
 import '../styles/Properties.css';
 
 import axios from "axios";
@@ -38,6 +39,7 @@ const Properties = () => {
  
   return (
     <div className="properties">
+      <SideBar />
       {loading && alert.isSuccess === true && (
         <div className="properties__loading">loading</div>
       )}

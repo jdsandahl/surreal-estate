@@ -45,6 +45,57 @@ exports[`App the page renders correctly against snapshot 1`] = `
       class="properties"
     >
       <div
+        class="sidebar"
+      >
+        <label>
+          Filter By City:
+          <ul
+            class="sidebar__links"
+          >
+            <li
+              class="sidebar__item"
+            >
+              <a
+                class="sidebar__link"
+                href="/?query={\\"city\\": \\"Manchester\\"}"
+              >
+                Manchester
+              </a>
+            </li>
+            <li
+              class="sidebar__item"
+            >
+              <a
+                class="sidebar__link"
+                href="/?query={\\"city\\": \\"Leeds\\"}"
+              >
+                Leeds
+              </a>
+            </li>
+            <li
+              class="sidebar__item"
+            >
+              <a
+                class="sidebar__link"
+                href="/?query={\\"city\\": \\"Sheffield\\"}"
+              >
+                Sheffield
+              </a>
+            </li>
+            <li
+              class="sidebar__item"
+            >
+              <a
+                class="sidebar__link"
+                href="/?query={\\"city\\": \\"Liverpool\\"}"
+              >
+                Liverpool
+              </a>
+            </li>
+          </ul>
+        </label>
+      </div>
+      <div
         class="properties__loading"
       >
         loading
