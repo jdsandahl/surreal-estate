@@ -41,8 +41,12 @@ exports[`App the page renders correctly against snapshot 1`] = `
         </li>
       </ul>
     </div>
-    <div>
-      <div>
+    <div
+      class="properties"
+    >
+      <div
+        class="properties__loading"
+      >
         loading
       </div>
       <div

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropertyListings from "./PropertyListings";
 import Alert from "./Alert";
+import '../styles/Properties.css';
 
 import axios from "axios";
 
@@ -36,9 +37,9 @@ const Properties = () => {
   }, []);
  
   return (
-    <div>
+    <div className="properties">
       {loading && alert.isSuccess === true && (
-        <div>loading</div>
+        <div className="properties__loading">loading</div>
       )}
       <Alert message={alert.message} success={alert.isSuccess} />
       <PropertyListings listings={listings} />

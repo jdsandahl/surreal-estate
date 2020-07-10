@@ -1,18 +1,29 @@
 .property-card {
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    font-family: 'Open Sans';
-    min-width: 250px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-family: "Open Sans";
+  min-width: 250px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 #c6c6c6;
 }
 
 .property-card__logo {
-    display:flex;
-    justify-content: center;
-    background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: center;
+  background-color: rgb(230, 230, 230);
 }
 
 .property-card__type {
-   font-style: italic; 
+  font-style: italic;
+}
+
+.property-card__email {
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #0d2a49;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: medium;
 }

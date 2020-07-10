@@ -2,8 +2,12 @@
 
 exports[`Properties the page renders correctly against snapshot 1`] = `
 <DocumentFragment>
-  <div>
-    <div>
+  <div
+    class="properties"
+  >
+    <div
+      class="properties__loading"
+    >
       loading
     </div>
     <div
