@@ -69,7 +69,7 @@ exports[`App the page renders correctly against snapshot 1`] = `
             >
               <a
                 class="sidebar__link"
-                href="/?query={\\"city\\": \\"Manchester\\"}"
+                href="/?query={\\"city\\":\\"Manchester\\"}"
               >
                 Manchester
               </a>
@@ -79,7 +79,7 @@ exports[`App the page renders correctly against snapshot 1`] = `
             >
               <a
                 class="sidebar__link"
-                href="/?query={\\"city\\": \\"Leeds\\"}"
+                href="/?query={\\"city\\":\\"Leeds\\"}"
               >
                 Leeds
               </a>
@@ -89,7 +89,7 @@ exports[`App the page renders correctly against snapshot 1`] = `
             >
               <a
                 class="sidebar__link"
-                href="/?query={\\"city\\": \\"Sheffield\\"}"
+                href="/?query={\\"city\\":\\"Sheffield\\"}"
               >
                 Sheffield
               </a>
@@ -99,9 +99,38 @@ exports[`App the page renders correctly against snapshot 1`] = `
             >
               <a
                 class="sidebar__link"
-                href="/?query={\\"city\\": \\"Liverpool\\"}"
+                href="/?query={\\"city\\":\\"Liverpool\\"}"
               >
                 Liverpool
+              </a>
+            </li>
+          </ul>
+        </label>
+        <label
+          class="sidebar__section"
+        >
+          Sort By:
+          <ul
+            class="sidebar__links"
+          >
+            <li
+              class="sidebar__item"
+            >
+              <a
+                class="sidebar__link"
+                href="/?sort={\\"price\\":1}"
+              >
+                Price - Ascending
+              </a>
+            </li>
+            <li
+              class="sidebar__item"
+            >
+              <a
+                class="sidebar__link"
+                href="/?sort={\\"price\\":-1}"
+              >
+                Price - Descending
               </a>
             </li>
           </ul>
