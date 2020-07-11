@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from 'react-router-dom';
 import PropertyListings from "./PropertyListings";
 import Alert from "./Alert";
 import SideBar from "./SideBar";
@@ -25,8 +26,8 @@ const Properties = () => {
 
     axios
       .get("http://localhost:4000/api/v1/PropertyListing")
-      .then((response) => {
-        setListings(response.data);
+      .then(({data}) => {
+        setListings(data);
         setLoading(false);
       })
       .catch((err) => {
@@ -36,6 +37,24 @@ const Properties = () => {
         });
       });
   }, []);
+
+  const { search } = useLocation();
+  useEffect(()=> {
+    setLoading(true);
+
+    axios
+    .get(`http://localhost:4000/api/v1/PropertyListing${search}`)
+    .then(({data}) => {
+      setListings(data);
+      setLoading(false);
+    })
+    .catch((err) => {
+      setAlert({
+        message: "Server Error: Properties not found, please try again later",
+        isSuccess: false,
+      });
+    });
+  }, [search]);
  
   return (
     <div className="properties">
