@@ -5,11 +5,23 @@ exports[`SideBar the component renders correctly against snapshot 1`] = `
   <div
     class="sidebar"
   >
-    <label>
+    <label
+      class="sidebar_section"
+    >
       Filter By City:
       <ul
         class="sidebar__links"
       >
+        <li
+          class="sidebar__item"
+        >
+          <a
+            class="sidebar__link"
+            href="/"
+          >
+            All
+          </a>
+        </li>
         <li
           class="sidebar__item"
         >
