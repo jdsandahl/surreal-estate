@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import qs from "qs";
 import "../styles/SideBar.css";
 
+import SearchForm from "./SearchForm";
+
 const SideBar = () => {
+  const [query, setQuery] = useState("");
+
+  const handleSearch = (event) => {
+    event.preventDefault();
+  };
+
+  const handleInputChange = (event) => {
+    setQuery(event.target.value);
+    console.log(query);
+  };
+
   const { search } = useLocation();
   const buildQueryString = (operation, valueObj) => {
     const currentQueryParams = qs.parse(search, { ignoreQueryPrefix: true });
@@ -20,6 +33,11 @@ const SideBar = () => {
 
   return (
     <div className="sidebar">
+      <SearchForm
+        handleSearch={handleSearch}
+        handleInputChange={handleInputChange}
+        query={query}
+      />
       <label className="sidebar_section">
         Filter By City:
         <ul className="sidebar__links">
