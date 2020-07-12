@@ -11,7 +11,9 @@ const SideBar = () => {
 
   const handleSearch = (event) => {
     event.preventDefault();
-    const newQueryString = buildQueryString('query', { title: { $regex: query } });
+    const newQueryString = buildQueryString("query", {
+      title: { $regex: query },
+    });
     history.push(newQueryString);
   };
 
@@ -21,12 +23,15 @@ const SideBar = () => {
   };
 
   const { search } = useLocation();
-  
+
   const buildQueryString = (operation, valueObj) => {
     const currentQueryParams = qs.parse(search, { ignoreQueryPrefix: true });
     const newQueryParams = {
       ...currentQueryParams,
-      [operation]: JSON.stringify(valueObj),
+      [operation]: JSON.stringify({
+        ...JSON.parse(currentQueryParams[operation] || "{}"),
+        ...valueObj,
+      }),
     };
 
     return qs.stringify(newQueryParams, {
