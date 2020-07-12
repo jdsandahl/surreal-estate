@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useHistory } from "react-router-dom";
 import qs from "qs";
 import "../styles/SideBar.css";
 
@@ -7,9 +7,12 @@ import SearchForm from "./SearchForm";
 
 const SideBar = () => {
   const [query, setQuery] = useState("");
+  const history = useHistory();
 
   const handleSearch = (event) => {
     event.preventDefault();
+    const newQueryString = buildQueryString('query', { title: { $regex: query } });
+    history.push(newQueryString);
   };
 
   const handleInputChange = (event) => {
@@ -18,6 +21,7 @@ const SideBar = () => {
   };
 
   const { search } = useLocation();
+  
   const buildQueryString = (operation, valueObj) => {
     const currentQueryParams = qs.parse(search, { ignoreQueryPrefix: true });
     const newQueryParams = {
