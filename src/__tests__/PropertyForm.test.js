@@ -10,8 +10,8 @@ describe("PropertyForm", () => {
     title: "",
     city: "Manchester",
     type: "Flat",
-    bedrooms: "2",
-    bathrooms: "1",
+    bedrooms: 2,
+    bathrooms: 1,
     price: 100000,
     email: "test@test.com",
   };
