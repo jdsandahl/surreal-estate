@@ -31,8 +31,12 @@
 
 .navbar__login {
     flex: 0 1 150px;
-    background-color: #3578e5;
-    color: #ffffff;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 4px 0 #c6c6c6;
+    color: #4b69ba;
+    border: none;
     padding: 20px;
     font-size: medium;
+    font-weight: bold;
+    margin: 0px;
 }
