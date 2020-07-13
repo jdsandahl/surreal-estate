@@ -6,6 +6,7 @@
   font-family: "Open Sans"; 
   background-color: #ffffff;
   box-shadow: 0 4px 8px 0 #c6c6c6;
+  max-height: 300px;
 }
 
 .property-card__logo {

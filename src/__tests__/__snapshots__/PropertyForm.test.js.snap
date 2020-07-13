@@ -21,140 +21,216 @@ exports[`PropertyForm the page renders correctly against snapshot 1`] = `
       class="form-label"
     >
       City:
-      <select
-        class="form-input"
-        id="city"
-        name="city"
+      <div
+        class="form-select"
       >
-        <option
-          value="Manchester"
+        <select
+          class="form-options"
+          id="city"
+          name="city"
         >
-          Manchester
-        </option>
-        <option
-          value="Leeds"
+          <option
+            value="Manchester"
+          >
+            Manchester
+          </option>
+          <option
+            value="Leeds"
+          >
+            Leeds
+          </option>
+          <option
+            value="Sheffield"
+          >
+            Sheffield
+          </option>
+          <option
+            value="Liverpool"
+          >
+            Liverpool
+          </option>
+        </select>
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-caret-down fa-w-10 "
+          data-icon="caret-down"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 320 512"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          Leeds
-        </option>
-        <option
-          value="Sheffield"
-        >
-          Sheffield
-        </option>
-        <option
-          value="Liverpool"
-        >
-          Liverpool
-        </option>
-      </select>
+          <path
+            d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
     </label>
     <label
       class="form-label"
     >
       Type:
-      <select
-        class="form-input"
-        id="type"
-        name="type"
+      <div
+        class="form-select"
       >
-        <option
-          value="Flat"
+        <select
+          class="form-options"
+          id="type"
+          name="type"
         >
-          Flat
-        </option>
-        <option
-          value="Detached"
+          <option
+            value="Flat"
+          >
+            Flat
+          </option>
+          <option
+            value="Detached"
+          >
+            Detached
+          </option>
+          <option
+            value="Semi-Detached"
+          >
+            Semi-Detached
+          </option>
+          <option
+            value="Terraced"
+          >
+            Terraced
+          </option>
+          <option
+            value="End of Terrace"
+          >
+            End of Terrace
+          </option>
+          <option
+            value="Cottage"
+          >
+            Cottage
+          </option>
+          <option
+            value="Bungalow"
+          >
+            Bungalow
+          </option>
+        </select>
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-caret-down fa-w-10 "
+          data-icon="caret-down"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 320 512"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          Detached
-        </option>
-        <option
-          value="Semi-Detached"
-        >
-          Semi-Detached
-        </option>
-        <option
-          value="Terraced"
-        >
-          Terraced
-        </option>
-        <option
-          value="End of Terrace"
-        >
-          End of Terrace
-        </option>
-        <option
-          value="Cottage"
-        >
-          Cottage
-        </option>
-        <option
-          value="Bungalow"
-        >
-          Bungalow
-        </option>
-      </select>
+          <path
+            d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
     </label>
     <label
       class="form-label"
     >
       Bedrooms:
-      <select
-        class="form-input"
-        id="bedrooms"
-        name="bedrooms"
+      <div
+        class="form-select"
       >
-        <option
-          value="1"
+        <select
+          class="form-options"
+          id="bedrooms"
+          name="bedrooms"
         >
-          1
-        </option>
-        <option
-          value="2"
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+          <option
+            value="4"
+          >
+            4
+          </option>
+        </select>
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-caret-down fa-w-10 "
+          data-icon="caret-down"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 320 512"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          2
-        </option>
-        <option
-          value="3"
-        >
-          3
-        </option>
-        <option
-          value="4"
-        >
-          4
-        </option>
-      </select>
+          <path
+            d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
     </label>
     <label
       class="form-label"
     >
       Bathrooms:
-      <select
-        class="form-input"
-        id="bathrooms"
-        name="bathrooms"
+      <div
+        class="form-select"
       >
-        <option
-          value="1"
+        <select
+          class="form-options"
+          id="bathrooms"
+          name="bathrooms"
         >
-          1
-        </option>
-        <option
-          value="2"
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+          <option
+            value="4"
+          >
+            4
+          </option>
+        </select>
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-caret-down fa-w-10 "
+          data-icon="caret-down"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 320 512"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          2
-        </option>
-        <option
-          value="3"
-        >
-          3
-        </option>
-        <option
-          value="4"
-        >
-          4
-        </option>
-      </select>
+          <path
+            d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
     </label>
     <label
       class="form-label"

@@ -28,6 +28,34 @@
   flex: 0 1 auto;
   align-items: center;
   margin: 5px;
+  padding: 5px;
+
+  border: 1px solid #c6c6c6;
+  border-radius: 5px;
+}
+
+
+.form-select {
+  flex: 0 1 auto;
+  margin: 5px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 5px;
+
+  appearance: none;
+  background-image: #0d2a49;
+  border: 1px solid #c6c6c6;
+  border-radius: 5px;
+}
+
+.form-options {
+  flex: 0 1 auto;
+  margin: 5px;
+  appearance: none;
+  border: none;
 }
 
 .add-property-button {

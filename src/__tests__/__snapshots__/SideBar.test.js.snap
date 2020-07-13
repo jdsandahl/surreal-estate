@@ -31,7 +31,7 @@ exports[`SideBar the component renders correctly against snapshot 1`] = `
       </button>
     </form>
     <label
-      class="sidebar_section"
+      class="sidebar__section"
     >
       Filter By City:
       <ul

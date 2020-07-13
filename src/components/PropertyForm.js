@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
 const PropertyForm = ({
   handleAddProperty,
@@ -30,25 +32,29 @@ const PropertyForm = ({
       </label>
       <label className="form-label">
         City:
+        <div className="form-select">
         <select
           id="city"
           name="city"
-          className="form-input"
+          className="form-options"
           value={city}
           onChange={handleFieldChange}
         >
           <option value="Manchester">Manchester</option>
           <option value="Leeds">Leeds</option>
           <option value="Sheffield">Sheffield</option>
-          <option value="Liverpool">Liverpool</option>
+          <option value="Liverpool">Liverpool</option>          
         </select>
+        <FontAwesomeIcon icon={faCaretDown} />
+        </div>
       </label>
       <label className="form-label">
         Type:
+        <div className="form-select">
         <select
           id="type"
           name="type"
-          className="form-input"
+          className="form-options"
           value={type}
           onChange={handleFieldChange}
         >
@@ -60,13 +66,16 @@ const PropertyForm = ({
           <option value="Cottage">Cottage</option>
           <option value="Bungalow">Bungalow</option>
         </select>
+        <FontAwesomeIcon icon={faCaretDown} />
+        </div>
       </label>
       <label className="form-label">
         Bedrooms:
+        <div className="form-select">
         <select
           id="bedrooms"
           name="bedrooms"
-          className="form-input"
+          className="form-options"
           value={bedrooms}
           onChange={handleFieldChange}
         >
@@ -75,13 +84,16 @@ const PropertyForm = ({
           <option value="3">3</option>
           <option value="4">4</option>
         </select>
+        <FontAwesomeIcon icon={faCaretDown} />
+        </div>
       </label>
       <label className="form-label">
         Bathrooms:
+        <div className="form-select">
         <select
           id="bathrooms"
           name="bathrooms"
-          className="form-input"
+          className="form-options"
           value={bathrooms}
           onChange={handleFieldChange}
         >
@@ -90,6 +102,8 @@ const PropertyForm = ({
           <option value="3">3</option>
           <option value="4">4</option>
         </select>
+        <FontAwesomeIcon icon={faCaretDown} />
+        </div>
       </label>
       <label className="form-label">
         Price (£):

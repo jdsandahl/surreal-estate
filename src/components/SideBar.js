@@ -47,7 +47,7 @@ const SideBar = () => {
         handleInputChange={handleInputChange}
         query={query}
       />
-      <label className="sidebar_section">
+      <label className="sidebar__section">
         Filter By City:
         <ul className="sidebar__links">
           <li className="sidebar__item">
