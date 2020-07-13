@@ -2,5 +2,5 @@
   background-color: rgb(230, 230, 230);
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 300px;
 }

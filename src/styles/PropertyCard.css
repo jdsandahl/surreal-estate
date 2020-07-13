@@ -1,5 +1,5 @@
 .property-card {
-  flex: 1 1 auto;
+  flex: 1 1 200px;
   display: flex;
   flex-direction: column;
   padding: 10px;
