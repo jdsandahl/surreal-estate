@@ -9,12 +9,17 @@ function App() {
   const [userId, setUserId] = useState("");
 
   const handleLogin = (response) => {
-    console.log(response.data);
+    const loginDetails = response.id;
+    setUserId(loginDetails);
   };
+
+  const handleLogout = () => {
+    window.FB.logout(() => setUserId(""));
+  }
 
   return (
     <div className="App">
-      <NavBar onLogin={handleLogin} />
+      <NavBar onLogin={handleLogin} onLogout={handleLogout} userId={userId} />
       <Switch>
         <Route exact path="/" component={Properties} />
         <Route exact path="/add-property" component={AddProperty} />

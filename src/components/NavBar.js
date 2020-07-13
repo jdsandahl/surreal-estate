@@ -4,8 +4,7 @@ import "../styles/NavBar.css";
 import Logo from "../images/real-estate-logo.png";
 import FacebookLogin from "react-facebook-login";
 
-const NavBar = ({ onLogin }) => {
-
+const NavBar = ({ onLogin, userId, onLogout }) => {
   return (
     <div className="navbar">
       <img className="logo" src={Logo} alt="logo" />
@@ -22,11 +21,19 @@ const NavBar = ({ onLogin }) => {
           </Link>
         </li>
       </ul>
-      <FacebookLogin
-        appId="206769633967359"
-        autoLoad={true}
-        callback={onLogin}
-      />
+      {!userId ? (
+        <FacebookLogin
+          appId="206769633967359"
+          autoLoad={true}
+          callback={onLogin}
+          cssClass="navbar__login"
+          icon="fa-facebook"
+        />
+      ) : (
+        <button className="navbar__login" onClick={onLogout}>
+          Sign Out
+        </button>
+      )}
     </div>
   );
 };
