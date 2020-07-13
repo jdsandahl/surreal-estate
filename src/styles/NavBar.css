@@ -5,6 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .logo {
@@ -13,11 +14,12 @@
 }
 
 .navbar-links {
+    flex: 1 1 auto;
+    display: flex;
     list-style: none;
 }
 
 .navbar-links-item {
-    display: inline-block;
     margin: none;
     padding: 10px;
 }
@@ -25,4 +27,12 @@
 .navbar-link {
     text-decoration: none;
     color: #0d2a49;
+}
+
+.navbar__login {
+    flex: 0 1 150px;
+    background-color: #3578e5;
+    color: #ffffff;
+    padding: 20px;
+    font-size: medium;
 }
