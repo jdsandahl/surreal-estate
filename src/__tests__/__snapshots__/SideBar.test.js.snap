@@ -5,12 +5,16 @@ exports[`SideBar the component renders correctly against snapshot 1`] = `
   <div
     class="sidebar"
   >
-    <form>
+    <form
+      class="search-form"
+    >
       <input
+        class="search-form__input"
         type="text"
         value=""
       />
       <button
+        class="search-form__submit"
         type="submit"
       >
         <svg

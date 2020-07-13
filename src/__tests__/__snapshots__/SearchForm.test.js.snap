@@ -2,12 +2,16 @@
 
 exports[`SearchForm that it renders correct against snapshot 1`] = `
 <DocumentFragment>
-  <form>
+  <form
+    class="search-form"
+  >
     <input
+      class="search-form__input"
       type="text"
       value=""
     />
     <button
+      class="search-form__submit"
       type="submit"
     >
       <svg

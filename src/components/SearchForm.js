@@ -2,12 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import '../styles/SearchForm.css';
 
 const SearchForm = ({ handleSearch, handleInputChange, query }) => {
   return (
-    <form onSubmit={handleSearch}>
-      <input type="text" value={query} onChange={handleInputChange} />
-      <button type="submit">
+    <form className="search-form" onSubmit={handleSearch}>
+      <input className="search-form__input" type="text" value={query} onChange={handleInputChange} />
+      <button className="search-form__submit" type="submit">
         <FontAwesomeIcon icon={faSearch} />
       </button>
     </form>
