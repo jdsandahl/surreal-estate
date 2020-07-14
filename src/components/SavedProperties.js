@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import axios from "axios";
 import FavouriteCard from "./FavouriteCard";
 import Alert from "./Alert";
+import '../styles/SavedProperties.css';
 
 const SavedProperties = ({ userId }) => {
   const initialState = {
@@ -35,7 +36,7 @@ const SavedProperties = ({ userId }) => {
           isSuccess: false,
         });
       });
-  }, []);
+  }, [userId]);
 
 
   return (
