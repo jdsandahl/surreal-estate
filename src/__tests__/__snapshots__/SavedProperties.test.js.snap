@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SavedProperties it renders correctly against a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="saved-properties"
+    data-testid="saved-properties"
+  >
+    Saved Properties
+  </div>
+</DocumentFragment>
+`;

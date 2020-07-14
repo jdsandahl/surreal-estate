@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
 import Logo from "../images/real-estate-logo.png";
 import FacebookLogin from "react-facebook-login";
-import ErrorBoundary from './ErrorBoundary';
+import ErrorBoundary from "./ErrorBoundary";
 
 const NavBar = ({ onLogin, userId, onLogout }) => {
   return (
@@ -16,6 +16,13 @@ const NavBar = ({ onLogin, userId, onLogout }) => {
             View Properties
           </Link>
         </li>
+        {userId && (
+          <li className="navbar-links-item">
+            <Link to="saved-properties" className="navbar-link">
+              Saved Properties
+            </Link>
+          </li>
+        )}
         <li className="navbar-links-item">
           <Link to="add-property" className="navbar-link">
             Add Property
@@ -24,13 +31,13 @@ const NavBar = ({ onLogin, userId, onLogout }) => {
       </ul>
       {!userId ? (
         <ErrorBoundary>
-        <FacebookLogin
-          appId="206769633967359"
-          autoLoad={false}
-          callback={onLogin}
-          cssClass="navbar__login"
-          icon="fa-facebook"
-        />
+          <FacebookLogin
+            appId="206769633967359"
+            autoLoad={false}
+            callback={onLogin}
+            cssClass="navbar__login"
+            icon="fa-facebook"
+          />
         </ErrorBoundary>
       ) : (
         <button className="navbar__login" onClick={onLogout}>

@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar.js";
 import Properties from "./Properties";
 import AddProperty from "./AddProperty";
+import SavedProperties from "./SavedProperties";
 
 function App() {
   const [userId, setUserId] = useState("");
@@ -25,6 +26,11 @@ function App() {
           exact
           path="/"
           render={(props) => <Properties {...props} userId={userId} />}
+        />
+        <Route
+          exact
+          path="/saved-properties"
+          render={(props) => <SavedProperties {...props} userId={userId} />}
         />
         <Route exact path="/add-property" component={AddProperty} />
       </Switch>
