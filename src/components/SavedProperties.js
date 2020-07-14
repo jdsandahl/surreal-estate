@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
 import FavouriteCard from "./FavouriteCard";
+import Alert from "./Alert";
 
 const SavedProperties = ({ userId }) => {
   const initialState = {
@@ -39,8 +40,11 @@ const SavedProperties = ({ userId }) => {
 
   return (
     <div className="saved-properties" data-testid="saved-properties">
-      Saved Properties
-      <div className="favouriteCard">
+      {loading && alert.isSuccess === true && (
+        <div className="favourites__loading">loading</div>
+      )}
+      <Alert message={alert.message} success={alert.isSuccess} />
+      <div className="favourites-list">
           {favourites.map((favourite) => (
               <FavouriteCard key={favourite._id} {...favourite} userId={userId} />
           ))}
