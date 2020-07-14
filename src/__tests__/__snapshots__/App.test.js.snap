@@ -40,6 +40,9 @@ exports[`App the page renders correctly against snapshot 1`] = `
           </a>
         </li>
       </ul>
+      <p>
+        TypeError: Cannot read property 'parentNode' of undefined
+      </p>
     </div>
     <div
       class="properties"
@@ -174,6 +177,9 @@ exports[`App the page renders correctly against snapshot 1`] = `
         class="property-listings"
       />
     </div>
+    <div
+      id="fb-root"
+    />
   </div>
 </DocumentFragment>
 `;

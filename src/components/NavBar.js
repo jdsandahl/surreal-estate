@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
 import Logo from "../images/real-estate-logo.png";
 import FacebookLogin from "react-facebook-login";
+import ErrorBoundary from './ErrorBoundary';
 
 const NavBar = ({ onLogin, userId, onLogout }) => {
   return (
@@ -22,13 +23,15 @@ const NavBar = ({ onLogin, userId, onLogout }) => {
         </li>
       </ul>
       {!userId ? (
+        <ErrorBoundary>
         <FacebookLogin
           appId="206769633967359"
-          autoLoad={true}
+          autoLoad={false}
           callback={onLogin}
           cssClass="navbar__login"
           icon="fa-facebook"
         />
+        </ErrorBoundary>
       ) : (
         <button className="navbar__login" onClick={onLogout}>
           Sign Out

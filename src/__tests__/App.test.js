@@ -5,7 +5,7 @@ import { createMemoryHistory } from "history";
 import App from "../components/App";
 
 describe("App", () => {
-  test('the page renders correctly against snapshot', () => {
+  test("the page renders correctly against snapshot", () => {
     const history = createMemoryHistory();
     const { asFragment } = render(
       <Router history={history}>
@@ -16,7 +16,6 @@ describe("App", () => {
 
     expect(component).toMatchSnapshot();
   });
-
 
   test("full app rendering & navigating correctly", () => {
     const history = createMemoryHistory();
