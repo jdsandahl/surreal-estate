@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 import PropertyListings from "./PropertyListings";
 import Alert from "./Alert";
 import SideBar from "./SideBar";
-import '../styles/Properties.css';
+import "../styles/Properties.css";
 
 import axios from "axios";
 
-const Properties = () => {
+const Properties = ({ userId }) => {
   const initialState = {
     listings: [],
     loading: false,
@@ -26,7 +26,7 @@ const Properties = () => {
 
     axios
       .get("http://localhost:4000/api/v1/PropertyListing")
-      .then(({data}) => {
+      .then(({ data }) => {
         setListings(data);
         setLoading(false);
       })
@@ -39,23 +39,23 @@ const Properties = () => {
   }, []);
 
   const { search } = useLocation();
-  useEffect(()=> {
+  useEffect(() => {
     setLoading(true);
 
     axios
-    .get(`http://localhost:4000/api/v1/PropertyListing${search}`)
-    .then(({data}) => {
-      setListings(data);
-      setLoading(false);
-    })
-    .catch((err) => {
-      setAlert({
-        message: "Server Error: Properties not found, please try again later",
-        isSuccess: false,
+      .get(`http://localhost:4000/api/v1/PropertyListing${search}`)
+      .then(({ data }) => {
+        setListings(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        setAlert({
+          message: "Server Error: Properties not found, please try again later",
+          isSuccess: false,
+        });
       });
-    });
   }, [search]);
- 
+
   return (
     <div className="properties">
       <SideBar />
@@ -63,7 +63,7 @@ const Properties = () => {
         <div className="properties__loading">loading</div>
       )}
       <Alert message={alert.message} success={alert.isSuccess} />
-      <PropertyListings listings={listings} />
+      <PropertyListings listings={listings} userId={userId} />
     </div>
   );
 };

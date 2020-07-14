@@ -19,6 +19,10 @@
   background-color: rgb(230, 230, 230);
 }
 
+.property-card__title {
+  font-weight: bold;
+}
+
 .property-card__type {
   font-style: italic;
 }
@@ -28,6 +32,14 @@
   padding: 5px;
   background-color: #0d2a49;
   color: #ffffff;
+  font-weight: 900;
+  font-size: medium;
+}
+
+.property-card__save {
+  margin-top: 5px;
+  padding: 5px;
+
   font-weight: 900;
   font-size: medium;
 }

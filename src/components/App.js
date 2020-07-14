@@ -15,13 +15,17 @@ function App() {
 
   const handleLogout = () => {
     window.FB.logout(() => setUserId(""));
-  }
-
+  };
+  console.log(userId);
   return (
     <div className="App">
       <NavBar onLogin={handleLogin} onLogout={handleLogout} userId={userId} />
       <Switch>
-        <Route exact path="/" component={Properties} />
+        <Route
+          exact
+          path="/"
+          render={(props) => <Properties {...props} userId={userId} />}
+        />
         <Route exact path="/add-property" component={AddProperty} />
       </Switch>
       <div id="fb-root"></div>
