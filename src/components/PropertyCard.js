@@ -14,6 +14,7 @@ import {
 import Logo from "../images/real-estate-logo.png";
 
 const PropertyCard = ({
+  _id,
   title,
   type,
   city,
@@ -22,6 +23,7 @@ const PropertyCard = ({
   price,
   email,
   userId,
+  onSaveProperty,
 }) => (
   <div className="property-card">
     <div className="property-card__logo">
@@ -46,7 +48,11 @@ const PropertyCard = ({
       <FontAwesomeIcon icon={faEnvelope} /> Email
     </button>
     {userId && (
-      <button className="property-card__save" href="#" >
+      <button
+        className="property-card__save"
+        href="#"
+        onClick={() => onSaveProperty(_id)}
+      >
         <FontAwesomeIcon icon={faStar} /> Save
       </button>
     )}
@@ -55,6 +61,7 @@ const PropertyCard = ({
 
 PropertyCard.propTypes = {
   listings: PropTypes.shape({
+    _id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     city: PropTypes.string.isRequired,
@@ -62,6 +69,8 @@ PropertyCard.propTypes = {
     bathrooms: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     email: PropTypes.string.isRequired,
+    userId: PropTypes.string,
+    onSaveProperty: PropTypes.func
   }),
 };
 

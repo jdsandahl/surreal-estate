@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import PropertyListings from "./PropertyListings";
 import Alert from "./Alert";
 import SideBar from "./SideBar";
+import postFavourite from "../services/postFavourite";
 import "../styles/Properties.css";
 
 import axios from "axios";
@@ -56,6 +57,15 @@ const Properties = ({ userId }) => {
       });
   }, [search]);
 
+  const clearAlert = () => {
+    setAlert(initialState.alert);
+  };
+
+  const handleSaveProperty = async (listingId) => {
+    setAlert(await postFavourite(listingId, userId));
+      setTimeout(clearAlert, 3000);
+  };
+
   return (
     <div className="properties">
       <SideBar />
@@ -63,7 +73,11 @@ const Properties = ({ userId }) => {
         <div className="properties__loading">loading</div>
       )}
       <Alert message={alert.message} success={alert.isSuccess} />
-      <PropertyListings listings={listings} userId={userId} />
+      <PropertyListings
+        listings={listings}
+        userId={userId}
+        onSaveProperty={handleSaveProperty}
+      />
     </div>
   );
 };
