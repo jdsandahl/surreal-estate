@@ -241,7 +241,7 @@ exports[`PropertyForm the page renders correctly against snapshot 1`] = `
         id="price"
         min="0"
         name="price"
-        step="5000"
+        step="1"
         type="number"
         value="100000"
       />

@@ -113,7 +113,7 @@ const PropertyForm = ({
           className="form-input"
           type="number"
           min="0"
-          step="5000"
+          step="1"
           value={price}
           onChange={handleFieldChange}
         />
