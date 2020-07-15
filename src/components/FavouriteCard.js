@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "../styles/FavouriteCard.css";
 
 const FavouriteCard = ({
@@ -23,6 +24,17 @@ const FavouriteCard = ({
       </button>
     </div>
   );
+};
+
+FavouriteCard.propTypes = {
+ favourites: PropTypes.shape({   
+  _id: PropTypes.string.isRequired,
+  propertyListing: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+  }),
+  onRemoveFavourite: PropTypes.func.isRequired,
+}),
 };
 
 export default FavouriteCard;
