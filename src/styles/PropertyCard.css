@@ -36,6 +36,11 @@
   font-size: medium;
 }
 
+.property-card__mailto {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .property-card__save {
   margin-top: 5px;
   padding: 5px;

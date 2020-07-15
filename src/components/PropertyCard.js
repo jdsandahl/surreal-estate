@@ -44,8 +44,11 @@ const PropertyCard = ({
     <div className="property-card__price" data-testid="price">
       <FontAwesomeIcon icon={faPoundSign} /> {price}
     </div>
-    <button className="property-card__email" href={`mailto:${email}`}>
-      <FontAwesomeIcon icon={faEnvelope} /> Email
+    <button className="property-card__email">
+      <FontAwesomeIcon icon={faEnvelope} />{" "}
+      <a className="property-card__mailto" href={`mailto:${email}`}>
+        Email
+      </a>
     </button>
     {userId && (
       <button
@@ -70,7 +73,7 @@ PropertyCard.propTypes = {
     price: PropTypes.number.isRequired,
     email: PropTypes.string.isRequired,
     userId: PropTypes.string,
-    onSaveProperty: PropTypes.func
+    onSaveProperty: PropTypes.func,
   }),
 };
 

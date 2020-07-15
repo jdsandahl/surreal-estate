@@ -91,7 +91,6 @@ exports[`PropertyCard it renders correctly against snapshot 1`] = `
     </div>
     <button
       class="property-card__email"
-      href="mailto:test@test.com"
     >
       <svg
         aria-hidden="true"
@@ -108,7 +107,13 @@ exports[`PropertyCard it renders correctly against snapshot 1`] = `
           fill="currentColor"
         />
       </svg>
-       Email
+       
+      <a
+        class="property-card__mailto"
+        href="mailto:test@test.com"
+      >
+        Email
+      </a>
     </button>
   </div>
 </DocumentFragment>

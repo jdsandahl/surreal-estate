@@ -1,24 +1,32 @@
 .favourite-card {
-    display: flex;
-    background-color: #ffffff;
-    margin: 10px;
-    padding: 10px;
+  display: flex;
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 10px;
 }
 
 .favourite-card__detail {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.favourite-card__mailto {
+  text-decoration: none;
+  color: green;
 }
 
 .favourite-card__btn {
-    flex: 0 1 100px;
-    justify-self: flex-end;
-    margin: 5px;
+  flex: 0 1 100px;
+  justify-self: flex-end;
+  margin: 5px;
 }
 
-.--email{
- background-color: green;
+.favourite-card__btn--email {
+  border: 2px solid green;
+  background-color: #d1f2de;
 }
 
-.--remove{
- background-color: red;
+.favourite-card__btn--remove {
+  border: 2px solid red;
+  color: red;
+  background-color: #fcd3c9;
 }

@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 import axios from "axios";
 import FavouriteCard from "./FavouriteCard";
 import Alert from "./Alert";
-import '../styles/SavedProperties.css';
+import deleteFavourite from "../services/deleteFavourite";
+import "../styles/SavedProperties.css";
 
 const SavedProperties = ({ userId }) => {
   const initialState = {
@@ -28,7 +29,6 @@ const SavedProperties = ({ userId }) => {
       )
       .then(({ data }) => {
         setFavourites(data);
-        setLoading(false);
       })
       .catch((err) => {
         setAlert({
@@ -36,8 +36,18 @@ const SavedProperties = ({ userId }) => {
           isSuccess: false,
         });
       });
-  }, [userId]);
+    setLoading(false);
+  }, [userId, favourites]);
 
+  const clearAlert = () => {
+    setAlert(initialState.alert);
+  };
+
+  const handleRemoveFavourite = async (favouriteId) => {
+    console.log(favouriteId);
+    setAlert(await deleteFavourite(favouriteId));
+    setTimeout(clearAlert, 3000);
+  };
 
   return (
     <div className="saved-properties" data-testid="saved-properties">
@@ -46,9 +56,13 @@ const SavedProperties = ({ userId }) => {
       )}
       <Alert message={alert.message} success={alert.isSuccess} />
       <div className="favourites-list">
-          {favourites.map((favourite) => (
-              <FavouriteCard key={favourite._id} {...favourite} userId={userId} />
-          ))}
+        {favourites.map((favourite) => (
+          <FavouriteCard
+            key={favourite._id}
+            {...favourite}
+            onRemoveFavourite={handleRemoveFavourite}
+          />
+        ))}
       </div>
     </div>
   );
