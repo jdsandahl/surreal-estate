@@ -29,7 +29,6 @@ const Properties = ({ userId }) => {
       .get("http://localhost:4000/api/v1/PropertyListing")
       .then(({ data }) => {
         setListings(data);
-        setLoading(false);
       })
       .catch((err) => {
         setAlert({
@@ -37,6 +36,7 @@ const Properties = ({ userId }) => {
           isSuccess: false,
         });
       });
+    setLoading(false);
   }, []);
 
   const { search } = useLocation();
@@ -47,7 +47,6 @@ const Properties = ({ userId }) => {
       .get(`http://localhost:4000/api/v1/PropertyListing${search}`)
       .then(({ data }) => {
         setListings(data);
-        setLoading(false);
       })
       .catch((err) => {
         setAlert({
@@ -55,6 +54,7 @@ const Properties = ({ userId }) => {
           isSuccess: false,
         });
       });
+    setLoading(false);
   }, [search]);
 
   const clearAlert = () => {
@@ -63,7 +63,7 @@ const Properties = ({ userId }) => {
 
   const handleSaveProperty = async (listingId) => {
     setAlert(await postFavourite(listingId, userId));
-      setTimeout(clearAlert, 3000);
+    setTimeout(clearAlert, 3000);
   };
 
   return (
