@@ -72,12 +72,14 @@ const Properties = ({ userId }) => {
       {loading && alert.isSuccess === true && (
         <div className="properties__loading">loading</div>
       )}
-      <Alert message={alert.message} success={alert.isSuccess} />
-      <PropertyListings
-        listings={listings}
-        userId={userId}
-        onSaveProperty={handleSaveProperty}
-      />
+      <div className="properties__main">
+        <Alert message={alert.message} success={alert.isSuccess} />
+        <PropertyListings
+          listings={listings}
+          userId={userId}
+          onSaveProperty={handleSaveProperty}
+        />
+      </div>
     </div>
   );
 };

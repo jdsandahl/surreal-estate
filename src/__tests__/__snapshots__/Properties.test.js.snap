@@ -127,8 +127,12 @@ exports[`Properties the page renders correctly against snapshot 1`] = `
       </label>
     </div>
     <div
-      class="property-listings"
-    />
+      class="properties__main"
+    >
+      <div
+        class="property-listings"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
