@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import "../styles/NavBar.css";
 import Logo from "../images/real-estate-logo.png";
 import FacebookLogin from "react-facebook-login";
 import ErrorBoundary from "./ErrorBoundary";
 
-const NavBar = ({ onLogin, userId, onLogout }) => {
+const NavBar = ({ userId, onLogin, onLogout }) => {
   return (
     <div className="navbar">
       <img className="logo" src={Logo} alt="logo" />
@@ -46,6 +47,12 @@ const NavBar = ({ onLogin, userId, onLogout }) => {
       )}
     </div>
   );
+};
+
+NavBar.propTypes = {
+  userId: PropTypes.string,
+  onLogin: PropTypes.func,
+  onLogout: PropTypes.func,
 };
 
 export default NavBar;
