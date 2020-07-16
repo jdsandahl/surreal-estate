@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import PropertyListings from "./PropertyListings";
 import Alert from "./Alert";
 import SideBar from "./SideBar";
+import Loading from "./Loading";
 import postFavourite from "../services/postFavourite";
 import "../styles/Properties.css";
 
@@ -69,10 +70,8 @@ const Properties = ({ userId }) => {
   return (
     <div className="properties">
       <SideBar />
-      {loading && alert.isSuccess === true && (
-        <div className="properties__loading">loading</div>
-      )}
       <div className="properties__main">
+        <Loading loading={loading} />
         <Alert message={alert.message} success={alert.isSuccess} />
         <PropertyListings
           listings={listings}

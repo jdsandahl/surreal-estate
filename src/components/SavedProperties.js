@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import axios from "axios";
 import FavouriteCard from "./FavouriteCard";
 import Alert from "./Alert";
+import Loading from "./Loading";
 import deleteFavourite from "../services/deleteFavourite";
 import "../styles/SavedProperties.css";
 
@@ -51,9 +52,7 @@ const SavedProperties = ({ userId }) => {
 
   return (
     <div className="saved-properties" data-testid="saved-properties">
-      {loading && alert.isSuccess === true && (
-        <div className="favourites__loading">loading</div>
-      )}
+      <Loading loading={loading} />
       <Alert message={alert.message} success={alert.isSuccess} />
       <div className="favourites-list">
         {favourites.map((favourite) => (
