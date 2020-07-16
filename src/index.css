@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Orbitron&display=swap');
 
+:root {
+  --primary-dark-color: #0d2a49;
+  --primary-light-color: #ffffff;
+
+  --secondary-dark-color: #123b66;
+  --secondary-light-color: rgb(230,230,230);
+  
+  --tertiary-dark-color: #c6c6c6;
+  
+  --primary-success-color: green;
+  --secondary-success-color: #d1f2de;
+
+  --primary-error-color: red;
+  --secondary-error-color: #fcd3c9;
+
+  --light-text: #ffffff;
+  --dark-text: #0d2a49;
+}
 
 body {
   margin: 0;
@@ -7,7 +25,7 @@ body {
   font-family: 'Open Sans', 'Orbitron', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(230,230,230);
-  color: #0d2a49;
+  background-color: var(--secondary-light-color);
+  color: var(--primary-dark-color);
 }
 

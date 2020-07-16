@@ -4,13 +4,13 @@
 
 .search-form__input {
     margin-right: 0px;
-    border: 1px solid #c6c6c6;
+    border: 1px solid var(--tertiary-dark-color);
     border-radius: 5px 0px 0px 5px;
 }
 
 .search-form__submit {
-    border: 1px solid #c6c6c6;
+    border: 1px solid var(--tertiary-dark-color);
     border-radius: 0px 5px 5px 0px;
-    background-color: #0d2a49;
-    color: #ffffff;
+    background-color: var(--primary-dark-color);
+    color: var(--primary-light-color);
 }

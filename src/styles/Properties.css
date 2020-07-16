@@ -1,5 +1,5 @@
 .properties {
-  background-color: rgb(230, 230, 230);
+  background-color: var(--secondary-light-color);
   display: flex;
   height: 100vh;
 }

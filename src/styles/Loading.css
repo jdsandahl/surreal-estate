@@ -2,7 +2,7 @@
     overflow: hidden;
     width: 95%;
     height: 4px;
-    background-color: #f1f7fd;
+    background-color: var(--primary-light-color);
     margin: 20px auto;
 }
 
@@ -16,7 +16,7 @@
     content: '';
     position: absolute;
     height: 100%;
-    background-color: #000101;
+    background-color: var(--primary-dark-color);
     animation: indeterminate_first 1.5s infinite ease-out;
 }
 
@@ -24,7 +24,7 @@
     content: '';
     position: absolute;
     height: 100%;
-    background-color: #0d2a49;
+    background-color: var(--secondary-dark-color);
     animation: indeterminate_second 1.5s infinite ease-in;
 }
 

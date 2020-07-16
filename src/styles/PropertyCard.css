@@ -6,8 +6,8 @@
   gap: 10px;
   margin: 5px;
   font-family: "Open Sans"; 
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px 0 #c6c6c6;
+  background-color: var(--primary-light-color);
+  box-shadow: 0 4px 8px 0 var(--tertiary-dark-color);
   max-height: 300px;
 }
 
@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(230, 230, 230);
+  background-color: var(--secondary-light-color);
 }
 
 .property-card__title {
@@ -30,15 +30,17 @@
 .property-card__email {
   margin-top: 5px;
   padding: 5px;
-  background-color: #0d2a49;
-  color: #ffffff;
+
+  border: 1px solid var(--tertiary-dark-color);
+  background-color: var(--primary-dark-color);
+  color: var(--light-text);
   font-weight: 900;
   font-size: medium;
 }
 
 .property-card__mailto {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--light-text);
 }
 
 .property-card__save {
@@ -47,4 +49,8 @@
 
   font-weight: 900;
   font-size: medium;
+
+  border: 1px solid var(--tertiary-dark-color);
+  background-color: var(--secondary-light-color);
+  color: var(--primary-dark-color);
 }

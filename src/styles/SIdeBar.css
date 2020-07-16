@@ -1,8 +1,8 @@
 .sidebar {
   margin: 0px;
   padding: 10px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px 0 #c6c6c6;
+  background-color: var(--primary-light-color);
+  box-shadow: 0 4px 8px 0 var(--tertiary-dark-color);
   height: 100vh;
 
   display: flex;
@@ -25,5 +25,5 @@
 .sidebar__link {
   font-family: 'Open Sans';
   text-decoration: none;
-  color: #0d2a49;
+  color: var(--primary-dark-color);
 }
