@@ -1,4 +1,6 @@
 .saved-properties {
     display: flex;
     flex-direction: column;
+    background-color: var(--secondary-light-color);
+    height: 100vh;
 }
