@@ -1,10 +1,10 @@
 .sidebar {
-  margin: 0px;
+  margin: 15px 0px 0px 0px;
   padding: 10px;
   background-color: var(--primary-light-color);
   box-shadow: 0 4px 8px 0 var(--tertiary-dark-color);
   height: 100vh;
-
+  
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -17,9 +17,17 @@
 
 .sidebar__links {
   list-style: none;
+  padding-left: 5px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: flex-start;
+  align-content: flex-start;
 }
 
 .sidebar__item {
+  flex: 1 1 150px;
   padding: 5px;
 }
 

@@ -97,7 +97,7 @@ const SideBar = () => {
               to={buildQueryString("sort", { price: 1 })}
               className="sidebar__link"
             >
-              Price - Ascending
+              Price - from lowest
             </Link>
           </li>
           <li className="sidebar__item">
@@ -105,7 +105,7 @@ const SideBar = () => {
               to={buildQueryString("sort", { price: -1 })}
               className="sidebar__link"
             >
-              Price - Descending
+              Price - from highest
             </Link>
           </li>
         </ul>
