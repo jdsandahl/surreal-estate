@@ -26,7 +26,7 @@ const SavedProperties = ({ userId }) => {
 
     axios
       .get(
-        `http://localhost:4000/api/v1/Favourite?query={"fbUserId":"${userId}"}&populate=propertyListing`
+        `https://agile-taiga-51316.herokuapp.com/api/v1/Favourite?query={"fbUserId":"${userId}"}&populate=propertyListing`
       )
       .then(({ data }) => {
         setFavourites(data);

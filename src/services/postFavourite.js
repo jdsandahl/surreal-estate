@@ -2,7 +2,7 @@ import axios from "axios";
 
 const postFavourite = (listingId, userId) => {
   return axios
-    .post("http://localhost:4000/api/v1/Favourite", {
+    .post("https://agile-taiga-51316.herokuapp.com/api/v1/Favourite", {
       propertyListing: listingId,
       fbUserId: userId,
     })

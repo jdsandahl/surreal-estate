@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const deleteFavourite = (favouriteId) => {
     return axios
-    .delete(`http://localhost:4000/api/v1/Favourite/${favouriteId}`)
+    .delete(`https://agile-taiga-51316.herokuapp.com/api/v1/Favourite/${favouriteId}`)
     .then((response) => {
       console.log(response);
       return {

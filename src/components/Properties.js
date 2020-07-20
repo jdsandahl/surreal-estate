@@ -27,7 +27,7 @@ const Properties = ({ userId }) => {
     setLoading(true);
 
     axios
-      .get("http://localhost:4000/api/v1/PropertyListing")
+      .get("https://agile-taiga-51316.herokuapp.com/api/v1/PropertyListing")
       .then(({ data }) => {
         setListings(data);
       })
@@ -45,7 +45,7 @@ const Properties = ({ userId }) => {
     setLoading(true);
 
     axios
-      .get(`http://localhost:4000/api/v1/PropertyListing${search}`)
+      .get(`https://agile-taiga-51316.herokuapp.com/api/v1/PropertyListing${search}`)
       .then(({ data }) => {
         setListings(data);
       })
