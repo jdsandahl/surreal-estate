@@ -168,6 +168,11 @@ exports[`AddProperty the page renders correctly against snapshot 1`] = `
             >
               4
             </option>
+            <option
+              value="5"
+            >
+              5+
+            </option>
           </select>
           <svg
             aria-hidden="true"
@@ -217,6 +222,11 @@ exports[`AddProperty the page renders correctly against snapshot 1`] = `
               value="4"
             >
               4
+            </option>
+            <option
+              value="5"
+            >
+              5+
             </option>
           </select>
           <svg
