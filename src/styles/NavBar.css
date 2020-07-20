@@ -14,7 +14,7 @@
 }
 
 .navbar-links {
-    flex: 1 1 auto;
+    flex: 1 1 250px;
     display: flex;
     list-style: none;
 }
@@ -30,7 +30,7 @@
 }
 
 .navbar__login {
-    flex: 0 1 150px;
+    flex: 0 1 100px;
     background-color: #f4f4f4;
     box-shadow: 0 2px 4px 0 var(--tertiary-dark-color);
     color: #4b69ba;

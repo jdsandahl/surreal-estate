@@ -2,12 +2,12 @@
 
 :root {
   --primary-dark-color: #0d2a49;
-  --primary-light-color: #ffffff;
+  --primary-light-color: rgb(255,255,255,95%);
 
   --secondary-dark-color: #123b66;
-  --secondary-light-color: rgb(230,230,230);
+  --secondary-light-color: rgb(13,42,73,60%);
   
-  --tertiary-dark-color: #c6c6c6;
+  --tertiary-dark-color: rgb(5,17,30);
   
   --primary-success-color: green;
   --secondary-success-color: #d1f2de;
@@ -26,6 +26,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--secondary-light-color);
+  background-image: url("images/highrise-background.jpg");
   color: var(--primary-dark-color);
 }
 
