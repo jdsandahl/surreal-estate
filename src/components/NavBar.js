@@ -10,7 +10,7 @@ const NavBar = ({ userId, onLogin, onLogout }) => {
   return (
     <div className="navbar">
       <img className="logo" src={Logo} alt="logo" />
-      <h2>Surreal Estate</h2>
+      <h2 className="navbar-title">Surreal Estate</h2>
       <ul className="navbar-links">
         <li className="navbar-links-item">
           <Link to="/" className="navbar-link">

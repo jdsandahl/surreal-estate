@@ -63,3 +63,10 @@
   background-color: var(--secondary-dark-color);
   color: var(--primary-light-color);
 }
+
+@media only screen and (max-width: 500px) {
+
+  .property-card {
+    flex: 1 1 225px;
+  }
+}

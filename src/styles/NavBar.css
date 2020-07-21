@@ -9,8 +9,13 @@
 }
 
 .logo {
+    flex: 0 1 auto;
     height: 50px;
     padding: 10px;
+}
+
+.navbar-title {
+    flex: 1 1 auto;
 }
 
 .navbar-links {
@@ -44,3 +49,7 @@
     font-weight: bold;
     margin: 5px;
 }
+
+@media only screen and (max-width: 500px) {
+
+  }
