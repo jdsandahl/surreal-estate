@@ -62,7 +62,7 @@ exports[`SideBar the component renders correctly against snapshot 1`] = `
           >
             <a
               class="sidebar__link"
-              href="/"
+              href="/properties"
             >
               All
             </a>
