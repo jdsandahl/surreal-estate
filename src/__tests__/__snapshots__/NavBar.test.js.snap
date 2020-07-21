@@ -10,7 +10,9 @@ exports[`NavBar the page renders correctly against snapshot 1`] = `
       class="logo"
       src="real-estate-logo.png"
     />
-    <h2>
+    <h2
+      class="navbar-title"
+    >
       Surreal Estate
     </h2>
     <ul
@@ -36,10 +38,14 @@ exports[`NavBar the page renders correctly against snapshot 1`] = `
           Add Property
         </a>
       </li>
+      <li
+        class="navbar-links-item"
+      >
+        <p>
+          TypeError: Cannot read property 'parentNode' of undefined
+        </p>
+      </li>
     </ul>
-    <p>
-      TypeError: Cannot read property 'parentNode' of undefined
-    </p>
   </div>
 </DocumentFragment>
 `;

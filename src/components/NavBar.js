@@ -29,22 +29,25 @@ const NavBar = ({ userId, onLogin, onLogout }) => {
             Add Property
           </Link>
         </li>
+
+        <li className="navbar-links-item">
+          {!userId ? (
+            <ErrorBoundary>
+              <FacebookLogin
+                appId="206769633967359"
+                autoLoad={false}
+                callback={onLogin}
+                cssClass="navbar__login"
+                icon="fa-facebook"
+              />
+            </ErrorBoundary>
+          ) : (
+            <button className="navbar__login" onClick={onLogout}>
+              Sign Out
+            </button>
+          )}
+        </li>
       </ul>
-      {!userId ? (
-        <ErrorBoundary>
-          <FacebookLogin
-            appId="206769633967359"
-            autoLoad={false}
-            callback={onLogin}
-            cssClass="navbar__login"
-            icon="fa-facebook"
-          />
-        </ErrorBoundary>
-      ) : (
-        <button className="navbar__login" onClick={onLogout}>
-          Sign Out
-        </button>
-      )}
     </div>
   );
 };
