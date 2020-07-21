@@ -10,7 +10,9 @@ create a property search engine that will have multiple pages:
 
 - A property page.
 
-Properties will come from an API that we've created.
+Properties come from an API created by Manchester Codes, but has been self-deployed to a Heroku server for live use.
+
+![Screenshot](screenshotPreview.png)
 
 
 ## Concepts to be utilized
@@ -26,6 +28,21 @@ Properties will come from an API that we've created.
 - API Interaction
 
 - OAuth
+
+## Technologies Used
+
+- React using Create-React-App
+- Heroku / MongoDB
+- Netlify
+- Jest
+- React Testing Library
+
+## Dependencies 
+
+- Axios
+- qs 
+- react-facebook-login
+- font-awesome
 
 --------
 
@@ -48,12 +65,6 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Author
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Justin Sandahl
