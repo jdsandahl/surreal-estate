@@ -30,7 +30,6 @@
   align-items: center;
   margin: 5px;
   padding: 5px;
-
   border: 1px solid var(--tertiary-dark-color);
   border-radius: 5px;
 }
@@ -55,7 +54,6 @@
 .form-options {
   flex: 0 1 auto;
   margin: 5px;
-  appearance: none;
   border: none;
 }
 
