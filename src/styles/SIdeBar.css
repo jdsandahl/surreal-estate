@@ -5,6 +5,7 @@
   box-shadow: 0 4px 8px 0 var(--tertiary-dark-color);
   height: 100vh;
   
+  flex: 1 1 200px;
   display: flex;
   flex-direction: column;
   gap: 10px;
