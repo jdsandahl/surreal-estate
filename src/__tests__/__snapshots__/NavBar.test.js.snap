@@ -13,7 +13,12 @@ exports[`NavBar the page renders correctly against snapshot 1`] = `
     <h2
       class="navbar-title"
     >
-      Surreal Estate
+      <a
+        class="navbar-title-link"
+        href="/"
+      >
+        Surreal Estate
+      </a>
     </h2>
     <ul
       class="navbar-links"
@@ -23,7 +28,7 @@ exports[`NavBar the page renders correctly against snapshot 1`] = `
       >
         <a
           class="navbar-link"
-          href="/"
+          href="/properties"
         >
           View Properties
         </a>

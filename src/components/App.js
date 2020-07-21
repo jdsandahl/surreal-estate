@@ -6,6 +6,7 @@ import Properties from "./Properties";
 import AddProperty from "./AddProperty";
 import SavedProperties from "./SavedProperties";
 import Footer from "./Footer";
+import HomePage from "./HomePage";
 
 function App() {
   const [userId, setUserId] = useState("");
@@ -23,9 +24,15 @@ function App() {
     <div className="App">
       <NavBar onLogin={handleLogin} onLogout={handleLogout} userId={userId} />
       <Switch>
-        <Route
+
+      <Route
           exact
           path="/"
+          render={(props) => <HomePage {...props} userId={userId} />}
+        />
+        <Route
+          exact
+          path="/properties"
           render={(props) => <Properties {...props} userId={userId} />}
         />
         <Route

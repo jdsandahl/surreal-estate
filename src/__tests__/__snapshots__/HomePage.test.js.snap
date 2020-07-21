@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage the page renders correctly against snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="home-page"
+  >
+    <aside
+      class="home-page__welcome"
+    >
+      <h2
+        class="home-page__heading"
+      >
+        Welcome
+      </h2>
+      <p>
+        From our app you're able to view, search and post properties within the UK.
+      </p>
+      <p>
+        Save your favourite properties to view later by logging in with Facebook
+      </p>
+    </aside>
+  </div>
+</DocumentFragment>
+`;
