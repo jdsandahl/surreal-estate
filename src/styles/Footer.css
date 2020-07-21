@@ -1,9 +1,9 @@
 .footer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 
     margin: 0px;
-    padding-right: 20px;
+    padding-left: 20px;
     
     background-color: var(--tertiary-dark-color);
     border-top: 1px solid var(--tertiary-dark-color);

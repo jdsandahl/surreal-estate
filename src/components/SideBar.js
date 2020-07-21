@@ -62,7 +62,7 @@ const SideBar = () => {
         Filter By City:
         <ul className="sidebar__links">
           <li className="sidebar__item">
-            <Link to={`/`} className="sidebar__link">
+            <Link to={`/properties`} className="sidebar__link">
               All
             </Link>
           </li>
