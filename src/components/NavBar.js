@@ -35,6 +35,7 @@ const NavBar = ({ userId, onLogin, onLogout }) => {
             <ErrorBoundary>
               <FacebookLogin
                 appId="206769633967359"
+                fields="name, email, picture"
                 autoLoad={false}
                 callback={onLogin}
                 cssClass="navbar__login"
