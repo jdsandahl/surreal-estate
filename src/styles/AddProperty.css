@@ -12,8 +12,8 @@
   flex-direction: column;
   border: 1px solid var(--tertiary-dark-color);
   box-shadow: 0 4px 8px 0 var(--tertiary-dark-color);
-  padding: 25px;
-  min-width: 300px;
+  padding: 20px;
+  min-width: 150px;
   background-color: var(--primary-light-color);
 }
 
