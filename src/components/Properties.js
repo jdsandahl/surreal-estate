@@ -78,7 +78,7 @@ const Properties = ({ userId }) => {
 
   return (
     <div className="properties">
-      <SideBar />
+      
       <div className="properties__main">
         <Loading loading={loading} />
         <Alert message={alert.message} success={alert.isSuccess} />
@@ -88,6 +88,7 @@ const Properties = ({ userId }) => {
           onSaveProperty={handleSaveProperty}
         />
       </div>
+      <SideBar />
     </div>
   );
 };

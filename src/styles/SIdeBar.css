@@ -5,7 +5,7 @@
   box-shadow: 0 4px 8px 0 var(--tertiary-dark-color);
   min-height: 100vh;
   
-  flex: 1 1 200px;
+  flex: 1 1 50px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -42,9 +42,39 @@
   color: var(--tertiary-light-color);
 }
 
+/* For Burger Menu */
+.sidebar__filters--collapsed{
+  max-width: 10px;
+  min-height: 0px;
+  transform: scale(0);
+  transition: all 0.4s ease;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.sidebar__filters--visible{
+  transform: scale(1);
+  transition: all 0.4s ease;
+}
+
 @media only screen and (max-width: 500px) {
 
   .sidebar {
     min-height: auto;
   }
+
+  /* For Burger Menu */
+.sidebar__filters--collapsed{
+  max-width: 10px;
+  max-height: 0px;
+  transform: scale(0);
+  transition: all 0.4s ease;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.sidebar__filters--visible{
+  transform: scale(1);
+  transition: all 0.4s ease;
+}
 }

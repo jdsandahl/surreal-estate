@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useLocation, useHistory } from "react-router-dom";
 import qs from "qs";
 import "../styles/SideBar.css";
-
+import Burger from "./Burger";
 import SearchForm from "./SearchForm";
 
 const SideBar = () => {
@@ -22,6 +22,7 @@ const SideBar = () => {
     console.log(query);
   };
 
+  //Query builder for search bar 
   const { search } = useLocation();
 
   const buildQueryString = (operation, valueObj) => {
@@ -40,8 +41,18 @@ const SideBar = () => {
     });
   };
 
+  //State and logic for burger menu 
+  const [collapse, setCollapse] = useState(true);
+
+  const handleCheck = (e) => {
+    setCollapse(!collapse);
+    console.log(collapse);
+  }
+
   return (
-    <div className="sidebar">
+    <div className="sidebar">  
+    <Burger handleCheck={(e) => handleCheck(e)}/>
+    <div className={`sidebar__filters${collapse ? "--collapsed" : "--visible"}`}>
       <SearchForm
         handleSearch={handleSearch}
         handleInputChange={handleInputChange}
@@ -110,6 +121,7 @@ const SideBar = () => {
           </li>
         </ul>
       </label>
+      </div>
     </div>
   );
 };

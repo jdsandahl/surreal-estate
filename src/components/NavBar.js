@@ -8,7 +8,7 @@ import ErrorBoundary from "./ErrorBoundary";
 import Burger from "./Burger";
 
 const NavBar = ({ userId, onLogin, onLogout }) => {
-  const [collapse, setCollapse] = useState(false);
+  const [collapse, setCollapse] = useState(true);
 
   const handleCheck = (e) => {
     setCollapse(!collapse);

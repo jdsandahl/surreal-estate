@@ -13,6 +13,6 @@
 @media only screen and (max-width: 500px) {
 
   .properties {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }

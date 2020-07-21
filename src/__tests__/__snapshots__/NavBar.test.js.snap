@@ -34,7 +34,7 @@ exports[`NavBar the page renders correctly against snapshot 1`] = `
       </a>
     </h2>
     <ul
-      class="navbar-links navbar-links--visible"
+      class="navbar-links navbar-links--collapsed"
     >
       <li
         class="navbar-links-item"
