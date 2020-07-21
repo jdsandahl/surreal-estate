@@ -24,20 +24,29 @@ const Properties = ({ userId }) => {
   const [alert, setAlert] = useState(initialState.alert);
 
   useEffect(() => {
+    let mounted = true;
     setLoading(true);
 
     axios
       .get("https://agile-taiga-51316.herokuapp.com/api/v1/PropertyListing")
       .then(({ data }) => {
+        if(mounted){
         setListings(data);
+        }
       })
       .catch((err) => {
+        if(mounted){
         setAlert({
           message: "Server Error: Properties not found, please try again later",
           isSuccess: false,
         });
+      }
       });
     setLoading(false);
+
+    return() => {
+      mounted = false;
+    }
   }, []);
 
   const { search } = useLocation();

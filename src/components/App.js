@@ -5,6 +5,7 @@ import NavBar from "./NavBar.js";
 import Properties from "./Properties";
 import AddProperty from "./AddProperty";
 import SavedProperties from "./SavedProperties";
+import Footer from "./Footer";
 
 function App() {
   const [userId, setUserId] = useState("");
@@ -34,6 +35,7 @@ function App() {
         />
         <Route exact path="/add-property" component={AddProperty} />
       </Switch>
+      <Footer />
       <div id="fb-root"></div>
     </div>
   );

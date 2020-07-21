@@ -107,7 +107,7 @@ exports[`SideBar the component renders correctly against snapshot 1`] = `
             class="sidebar__link"
             href="/?sort={\\"price\\":1}"
           >
-            Price - Ascending
+            Price - from lowest
           </a>
         </li>
         <li
@@ -117,7 +117,7 @@ exports[`SideBar the component renders correctly against snapshot 1`] = `
             class="sidebar__link"
             href="/?sort={\\"price\\":-1}"
           >
-            Price - Descending
+            Price - from highest
           </a>
         </li>
       </ul>
