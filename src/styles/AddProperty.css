@@ -67,3 +67,8 @@
   font-weight: 900;
   font-size: medium;
 }
+
+.add-property-button:hover {
+  background-color: var(--secondary-dark-color);
+  color: var(--light-text);
+}

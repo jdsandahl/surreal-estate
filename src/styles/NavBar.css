@@ -29,6 +29,10 @@
     color: var(--primary-dark-color);
 }
 
+.navbar-link:hover {
+        color: var(--tertiary-light-color);
+}
+
 .navbar__login {
     flex: 0 1 100px;
     background-color: #f4f4f4;

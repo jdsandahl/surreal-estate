@@ -5,10 +5,11 @@
   --primary-light-color: rgb(255,255,255);
   --primary-light-color-trans: rgb(255,255,255,85%);
 
-  --secondary-dark-color: #123b66;
+  --secondary-dark-color: #1a5491;
   --secondary-light-color: rgb(13,42,73,60%);
   
   --tertiary-dark-color: rgb(5,17,30, 70%);
+  --tertiary-light-color: #9da9b6;
   
   --primary-success-color: green;
   --secondary-success-color: #d1f2de;

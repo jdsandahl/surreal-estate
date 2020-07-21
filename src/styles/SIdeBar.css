@@ -36,3 +36,7 @@
   text-decoration: none;
   color: var(--primary-dark-color);
 }
+
+.sidebar__link:hover{
+  color: var(--tertiary-light-color);
+}

@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondary-light-color);
+  background-color: var(--tertiary-light-color);
 }
 
 .property-card__title {
@@ -38,6 +38,10 @@
   font-size: medium;
 }
 
+.property-card__email:hover {
+  background-color: var(--secondary-dark-color);
+}
+
 .property-card__mailto {
   text-decoration: none;
   color: var(--light-text);
@@ -51,6 +55,11 @@
   font-size: medium;
 
   border: 1px solid var(--tertiary-dark-color);
-  background-color: var(--secondary-light-color);
+  background-color: var(--tertiary-light-color);
   color: var(--primary-dark-color);
+}
+
+.property-card__save:hover {
+  background-color: var(--secondary-dark-color);
+  color: var(--primary-light-color);
 }

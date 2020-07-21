@@ -15,3 +15,7 @@
     background-color: var(--primary-dark-color);
     color: var(--primary-light-color);
 }
+
+.search-form__submit:hover{
+    background-color: var(--secondary-dark-color);
+}
