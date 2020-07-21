@@ -5,6 +5,19 @@ exports[`NavBar the page renders correctly against snapshot 1`] = `
   <div
     class="navbar"
   >
+    <div
+      class="burger"
+    >
+      <input
+        class="burger__toggle"
+        type="checkbox"
+      />
+      <div
+        class="burger__lines"
+      >
+        <div />
+      </div>
+    </div>
     <img
       alt="logo"
       class="logo"
@@ -21,7 +34,7 @@ exports[`NavBar the page renders correctly against snapshot 1`] = `
       </a>
     </h2>
     <ul
-      class="navbar-links"
+      class="navbar-links navbar-links--visible"
     >
       <li
         class="navbar-links-item"

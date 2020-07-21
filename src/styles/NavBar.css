@@ -24,10 +24,23 @@
   }
 
 .navbar-links {
-  flex: 1 1 auto;
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
+    flex: 1 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.navbar-links--visible {
+  transform: scale(1);
+  transition: all 0.4s ease;
+}
+
+.navbar-links--collapsed {
+    max-height: 51px;
+    transform: scale(0);
+    transition: all 0.4s ease;
+    visibility: hidden;
+    overflow: hidden;
 }
 
 .navbar-links-item {
@@ -55,5 +68,8 @@
   font-weight: bold;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 875px) {
+    .navbar-links--collapsed {
+        max-height: 0px;
+    }
 }
