@@ -30,14 +30,16 @@ const SavedProperties = ({ userId }) => {
       )
       .then(({ data }) => {
         setFavourites(data);
+        setLoading(false);
       })
       .catch((err) => {
         setAlert({
           message: "Server Error: Properties not found, please try again later",
           isSuccess: false,
         });
+        setLoading(false);
       });
-    setLoading(false);
+
   }, [userId, favourites]);
 
   const clearAlert = () => {

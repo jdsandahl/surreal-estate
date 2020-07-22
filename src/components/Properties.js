@@ -33,6 +33,7 @@ const Properties = ({ userId }) => {
         if(mounted){
         setListings(data);
         }
+        setLoading(false);
       })
       .catch((err) => {
         if(mounted){
@@ -40,9 +41,9 @@ const Properties = ({ userId }) => {
           message: "Server Error: Properties not found, please try again later",
           isSuccess: false,
         });
+        setLoading(false);
       }
       });
-    setLoading(false);
 
     return() => {
       mounted = false;
@@ -57,14 +58,15 @@ const Properties = ({ userId }) => {
       .get(`https://agile-taiga-51316.herokuapp.com/api/v1/PropertyListing${search}`)
       .then(({ data }) => {
         setListings(data);
+        setLoading(false);
       })
       .catch((err) => {
         setAlert({
           message: "Server Error: Properties not found, please try again later",
           isSuccess: false,
         });
+        setLoading(false);
       });
-    setLoading(false);
   }, [search]);
 
   const clearAlert = () => {

@@ -7,6 +7,13 @@ exports[`SavedProperties it renders correctly against a snapshot 1`] = `
     data-testid="saved-properties"
   >
     <div
+      class="loading"
+    >
+      <div
+        class="indeterminate"
+      />
+    </div>
+    <div
       class="favourites-list"
     />
   </div>
